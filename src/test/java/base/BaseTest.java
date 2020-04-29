@@ -23,9 +23,9 @@ public class BaseTest
         System.out.println("Hello World");
     }
 
-    @AfterClass
+  /*  @AfterClass
     public void tearDown(){
         driver.quit();
-    }
+    }*/
 
 }

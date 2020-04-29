@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
@@ -10,4 +11,13 @@ public class HomePage {
         this.driver = driver;
     }
 
+    public LoginPage clickFormAuthentication(){
+        clickLink("Form Authentication");
+        return new LoginPage(driver);
+    }
+
+    private void clickLink(String LinkText)
+    {
+        driver.findElement(By.linkText(LinkText)).click();
+    }
 }
