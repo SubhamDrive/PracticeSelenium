@@ -15,6 +15,10 @@ public class HomePage {
         clickLink("Form Authentication");
         return new LoginPage(driver);
     }
+    public AbTestingPage clickAb(){
+        clickLink("A/B Testing");
+        return new AbTestingPage(driver);
+    }
 
     private void clickLink(String LinkText)
     {
