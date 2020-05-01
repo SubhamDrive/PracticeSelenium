@@ -20,6 +20,12 @@ public class HomePage {
         return new AbTestingPage(driver);
     }
 
+    public TyposPage clickTypos()
+    {
+        clickLink("Typos");
+        return new TyposPage(driver);
+    }
+
     private void clickLink(String LinkText)
     {
         driver.findElement(By.linkText(LinkText)).click();

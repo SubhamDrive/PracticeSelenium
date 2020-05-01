@@ -20,6 +20,7 @@ public class LoginPage {
     public void setPassword(String password){
         driver.findElement(passwordField).sendKeys(password);
     }
+
     public SecureAreaPage clickLoginButton(){
         driver.findElement(loginButton).click();
         return new SecureAreaPage(driver);
